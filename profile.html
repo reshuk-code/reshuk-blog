@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+
+    <!-- Add/Edit Post Form -->
+    <form id="post-form">
+        <label for="post-content">Post Content:</label>
+        <textarea id="post-content" rows="4" cols="50"></textarea>
+        <input type="hidden" id="post-id" value=""> <!-- Used to track the editing post -->
+        <button type="submit">Save Post</button>
+    </form>
+
+    <!-- User Posts -->
+    <h2>Your Posts</h2>
+    <div id="user-posts"></div>
+
+
+
+    <script src="/scripts/profile.js"></script>
+</body>
+</html>
